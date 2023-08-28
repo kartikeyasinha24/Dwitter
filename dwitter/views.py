@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import DweetForm
 from .models import Dweet, Profile
 
-
+#defining the dashboard
 def dashboard(request):
     form = DweetForm(request.POST)
     if request.method == 'POST':
